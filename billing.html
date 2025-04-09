@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billing Page</title>
+  <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+  <div class="billing-container">
+    <!-- Section 1: Categories -->
+    <div class="section" id="category-section">
+      <h3>Categories</h3>
+      <ul id="categoryList"></ul>
+    </div>
+
+    <!-- Section 2: Items -->
+    <div class="section" id="items-section">
+      <h3>Items</h3>
+      <div id="itemsList" class="items-grid"></div>
+    </div>
+
+    <!-- Section 3: Bill -->
+    <div class="section" id="bill-section">
+      <h3>Bill</h3>
+      <ul id="billList"></ul>
+      <h4 id="totalAmount">Total: ₹0</h4>
+    </div>
+    <button id="checkoutBtn">Checkout</button>
+<div id="receipt" style="display: none;"></div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="billing.js"></script>
+</body>
+</html>
